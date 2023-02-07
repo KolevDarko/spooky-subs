@@ -1,0 +1,36 @@
+# -----------------------
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# .prettierignore is a symbolic link to this files
+# .eslintignore is a symbolic link to this files
+# do not create .gitignore files in subdirectories if you want its entries to be ignored by Prettier
+# -----------------------
+
+# dependencies
+node_modules/
+/.pnp/
+.pnp.js
+
+# force eslint to read hidden storybook dir
+!/.storybook/
+
+# testing
+/coverage/
+/test-artifacts/
+/e2e/.cache/
+/e2e/reports/
+/e2e/results/
+/e2e/screenshots/
+/e2e/videos/
+
+# production
+/build/
+/storybook-static/
+
+# misc
+.DS_Store
+.env.local
+.env.*.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
